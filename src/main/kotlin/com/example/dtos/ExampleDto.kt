@@ -6,7 +6,7 @@ import io.micronaut.serde.annotation.Serdeable
 @Serdeable
 data class ExampleDto(
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
-    private val readElement: String,
+    private val readElement: String?,
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    private val writeElement: String
+    private val writeElement: String?
 )
